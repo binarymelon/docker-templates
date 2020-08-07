@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Containers>
+  <TemplateURL>https://gitlab.com/binarymelon/docker-templates/-/raw/master/binarymelon/qcma.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>MediaServers:</Category>
+  <Name>qcma</Name>
+  <Description>Qcma is a cross-platform application to provide a Open Source implementation of the original Content Manager Assistant that comes with the PS Vita. Qcma is meant to be compatible with Linux, Windows and MAC OS X.</Description>
+  <Registry>httyps://registry.hub.docker.com/r/binarymelon/qcma/</Registry>
+  <Project>https://github.com/codestation/qcma</Project>
+  <BindTime>true</BindTime>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9309</HostPort>
+        <ContainerPort>9309</ContainerPort>
+        <Protocol>udp</Protcol>
+      </Port>
+      <Port>
+        <HostPort>9309</HostPort>
+        <ContainerPort>9309</ContainerPort>
+        <Protocol>tcp</Protcol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/qcma</HostDir>
+      <ContainerDir>/root/.config/codestation</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>
