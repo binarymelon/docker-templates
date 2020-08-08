@@ -14,12 +14,12 @@
       <Port>
         <HostPort>9309</HostPort>
         <ContainerPort>9309</ContainerPort>
-        <Protocol>udp</Protcol>
+        <Protocol>udp</Protocol>
       </Port>
       <Port>
         <HostPort>9309</HostPort>
         <ContainerPort>9309</ContainerPort>
-        <Protocol>tcp</Protcol>
+        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
