@@ -6,6 +6,7 @@
   <Name>qcma</Name>
   <Description>Qcma is a cross-platform application to provide a Open Source implementation of the original Content Manager Assistant that comes with the PS Vita. Qcma is meant to be compatible with Linux, Windows and MAC OS X.</Description>
   <Registry>httyps://registry.hub.docker.com/r/binarymelon/qcma/</Registry>
+	<Repository>binarymelon/qcma</Repository>
   <Project>https://github.com/codestation/qcma</Project>
   <BindTime>true</BindTime>
   <Networking>
