@@ -6,7 +6,7 @@
   <Name>Nanit Stream Proxy</Name>
   <Description>This is sleepless night induced pet project to restream Nanit Baby Monitor live stream for local viewing.</Description>
   <Registry>https://registry.gitlab.com/adam.stanek/nanit</Registry>
-	<Repository>adam.stanek/nanit</Repository>
+	<Repository>registry.gitlab.com/adam.stanek/nanit</Repository>
   <Project>https://github.com/codestation/qcma</Project>
   <BindTime>true</BindTime>
   <Networking>
