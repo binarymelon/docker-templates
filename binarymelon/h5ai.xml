@@ -5,8 +5,8 @@
   <Category>HomeAutomation:</Category>
   <Name>h5ai</Name>
   <Description>h5ai is a modern web server index</Description>
-	<Repository>clue/h5ai</Repository>
-  <Project>https://github.com/clue/docker-h5ai</Project>
+	<Repository>awesometic/h5ai</Repository>
+  <Project>https://github.com/awesometic/docker-h5ai</Project>
   <BindTime>true</BindTime>
   <Networking>
     <Mode>bridge</Mode>
@@ -22,8 +22,13 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/var/www</ContainerDir>
+      <HostDir>/mnt/user/appdata</HostDir>
+      <ContainerDir>/h5ai</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/h5ai</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
