@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Containers>
+  <TemplateURL>https://gitlab.com/binarymelon/docker-templates/-/raw/master/binarymelon/qcma.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>HomeAutomation:</Category>
+  <Name>h5ai</Name>
+  <Description>h5ai is a modern web server index</Description>
+	<Repository>clue/h5ai</Repository>
+  <Project>https://github.com/clue/docker-h5ai</Project>
+  <BindTime>true</BindTime>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>
