@@ -32,4 +32,5 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
 </Containers>
