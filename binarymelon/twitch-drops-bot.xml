@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Containers>
+  <TemplateURL>https://gitlab.com/binarymelon/docker-templates/-/raw/master/binarymelon/twitch-drops-bot.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>HomeAutomation:</Category>
+  <Name>Twitch Drops Bot</Name>
+  <Description>This is a Node.js bot that uses Puppeteer to automatically watch Twitch streams and claim drop rewards.</Description>
+  <Registry>https://ghcr.io/tychothetaco/twitch-drops-bot</Registry>
+  <Repository>ghcr.io/tychothetaco/twitch-drops-bot</Repository>
+  <Project>https://github.com/TychoTheTaco/Twitch-Drops-Bot</Project>
+  <BindTime>true</BindTime>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/twitch-drops-bot</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>
