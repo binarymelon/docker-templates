@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version=2>
+  <TemplateURL>https://gitlab.com/binarymelon/docker-templates/-/raw/master/binarymelon/hoymiles-mqtt.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>HomeAutomation:</Category>
+  <Name>Hoymiles MQTT</Name>
+  <Description>Send data from Hoymiles photovoltaic installation to Home Assistant through MQTT broker.</Description>
+  <Registry>binarymelon/hoymiles-mqtt</Registry>
+  <Repository>https://github.com/wasilukm/hoymiles-mqtt</Repository>
+  <Project>https://github.com/wasilukm/hoymiles-mqtt</Project>
+  <BindTime>true</BindTime>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>MQTT_HOST</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>MQTT_USER</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>MQTT_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>DTU_HOST</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Config Type="Variable" Name="User ID" Target="PUID" Display="advanced" Required="true" />
+  <Config Type="Variable" Name="Group ID" Target="PGID" Display="advanced" Required="true" />
+  <Config Type="Variable" Name="MQTT Broker Host" Target="MQTT_HOST" Display="always" Required="true" />
+  <Config Type="Variable" Name="MQTT Broker Username" Target="MQTT_USER" Display="always" Required="false" />
+  <Config Type="Variable" Name="MQTT Broker Password" Target="MQTT_PASSWORD" Display="always" Required="false" Mask="true" />
+  <Config Type="Variable" Name="DTU Device Hostname/IP" Target="DTU_HOST" Display="always" Required="true" />
+</Container>
